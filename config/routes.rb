@@ -3,7 +3,10 @@ Rails.application.routes.draw do
   post 'top/login'
   root 'top#main'
   
-  post 'top/logout'
+  get 'top/logout'
+  
+#  resources :users, only: [:index, :new, :create, :destroy]
+
 #  get "application/L4"
 #  root "application#L4"
 end
